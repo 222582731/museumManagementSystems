@@ -3,12 +3,15 @@ Artifact POJO class
 Author: Y JILAJI (222582731)
 Date: 11 May 2025 */
 package za.ac.cput.domain;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import za.ac.cput.domain.enums.MaterialLocation;
 import za.ac.cput.domain.enums.Materials;
 
 import java.time.LocalDate;
-
+@Entity
 public class Artifact {
+    @Id
     private String artifactId;
     private String name;
     private String description;
